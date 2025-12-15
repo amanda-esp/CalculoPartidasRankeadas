@@ -1,7 +1,8 @@
+//Função para retornar o saldo de vitorias
 function saldoVitorias(vitorias, derrotas){
 	return vitorias - derrotas
 }
-
+//Função para retornar o nível do herói
 function nivel(vitorias){
 	let valorNivel
 	switch(true){
@@ -43,6 +44,7 @@ let herois = [
   ["Danilo",150,30]
 ]
 
+//Repetição para acessar os dados de todos os heróis 
 for(let i=0;i<4;i++){
   let saldoHeroi = saldoVitorias(herois[i][1],herois[i][2])
   let nivelHeroi = nivel(saldoHeroi)
